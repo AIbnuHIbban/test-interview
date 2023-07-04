@@ -12,6 +12,11 @@
         </tr>
         @foreach ($data as $dt)
             <tr>
+                <td>{{ $dt->name }}</td>
+                <td>{{ $dt->date }}</td>
+                <td>{{ $dt->time_start }} - {{ $dt->time_end }}</td>
+                <td>{{ $dt->venue }}</td>
+                <td></td>
             </tr>
         @endforeach
     </table>
